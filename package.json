@@ -1,0 +1,14 @@
+{
+	"name": "create-express-template",
+	"version": "1.0.0",
+	"description": "This is an npm package that will clone my express-api-template github repo to get a a quick start on creating express APIs.",
+	"main": "index.js",
+	"bin": {
+		"create-express-template": "index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Zach Anderson",
+	"license": "MIT"
+}
