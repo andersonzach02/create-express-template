@@ -1,3 +1,6 @@
+#! /usr/bin/env node
+
+const path = require('path');
 const { spawn } = require('child_process');
 
 const expressAPITemplateURL =
@@ -14,7 +17,23 @@ if (
 	Usage: create-express-template project-name`);
 }
 
-executeCommand('git', ['clone', expressAPITemplateURL, dirName]);
+executeCommand('git', ['clone', expressAPITemplateURL, dirName])
+	.then(() => {
+		return executeCommand('rmdir', [
+			'/s',
+			'/q',
+			path.join(`${dirName}`, '.git'),
+		]);
+	})
+	.then(() => {
+		console.log('Installing necessary dependencies...');
+		return executeCommand('npm', ['install'], {
+			cwd: process.cwd() + '/' + dirName,
+		});
+	})
+	.then(() => {
+		console.log('Done! 🥳');
+	});
 
 function executeCommand(command, args, options = undefined) {
 	const spawnedProcess = spawn(command, args, {
