@@ -1,5 +1,5 @@
 {
-	"name": "create-express-template",
+	"name": "create-express-api-template",
 	"version": "1.0.0",
 	"description": "This is an npm package that will clone my express-api-template github repo to get a a quick start on creating express APIs.",
 	"main": "index.js",
