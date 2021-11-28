@@ -1,14 +1,22 @@
 {
-	"name": "create-express-api-template",
-	"version": "1.0.0",
-	"description": "This is an npm package that will clone my express-api-template github repo to get a a quick start on creating express APIs.",
-	"main": "index.js",
-	"bin": {
-		"create-express-template": "index.js"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Zach Anderson",
-	"license": "MIT"
+  "name": "create-express-api-template",
+  "version": "1.0.0",
+  "description": "This is an npm package that will clone my express-api-template github repo to get a a quick start on creating express APIs.",
+  "main": "index.js",
+  "bin": {
+    "create-express-template": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Anderson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersonzach02/create-express-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andersonzach02/create-express-template/issues"
+  },
+  "homepage": "https://github.com/andersonzach02/create-express-template#readme"
 }

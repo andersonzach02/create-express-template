@@ -10,4 +10,6 @@ This is an npm package that I've created that will clone my express-api-template
 
 - [ ] Test the project to make sure that it works properly. 🧪
 
+- [ ] Configure package.json correctly to run script
+
 - [ ] Publish the package to npm. 📕
